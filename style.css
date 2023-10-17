@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(-45deg, #317de0, #425dd6, #aef898, rgb(67, 241, 81));
+	background-size: 2000% 2000% ;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#taskList{
+    list-style: none;
+}
+#taskList>*{
+    padding: 10px;
+}
+#taskList>*>*{
+    padding: 5px;
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.container {
+    background-color: white;
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+.container>*{
+    margin-left: 15px;
+}
+#taskInput{
+    width:200px;
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#taskInput:focus{
+    outline: none;
+    border-color: #2f9cf0;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.line {
+    width: 95%;
+    border-bottom: 1px solid black;
+}
+#clear{
+    margin-bottom: 10px;
+}
+#user{
+    width: 60px;
+    height: 75px;
+    border-radius: 60px; 
+    border: solid 3px lightslategray;
+    position: relative;
+    left: 700px;
+    top: 10px;
+}
+#header>*{
+    display: inline-block;
+}
